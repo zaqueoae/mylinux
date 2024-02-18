@@ -1,5 +1,5 @@
 # Configuración de linux
-Instalción del kernel backports, programsa que uso regularmente, tema de  kde...
+Configuracion inicial cuando instalo debian: upgrade del kernel backports, programas que uso regularmente, tema de  kde...
 
 ## Programas
 ```
