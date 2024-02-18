@@ -1,4 +1,5 @@
 # Configuración de linux
+Instalción del kernel backports, programsa que uso regularmente, tema de  kde...
 
 ## Programas
 ```
@@ -16,13 +17,17 @@ sudo apt install obs-studio
 sudo apt install audacity
 sudo apt install kdenlive
 sudo apt install linphone
+sudo apt install keepassxc
 ```
+
+
 ### Tema kde
 ```
 https://github.com/catppuccin/kde
 iconos: la capitane
 estilo ventanas: brisa
 ```
+
 
 ### Configuro kitty
 nano ~/.bashrc
