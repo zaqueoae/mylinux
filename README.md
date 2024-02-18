@@ -62,3 +62,6 @@ Por último corro esto:
 sudo apt-get install firmware-linux
 sudo apt-get upgrade firmware-linux
 ```
+
+## Energía en un thikpad t480
+Fuente: https://www.reddit.com/r/LinuxOnThinkpad/comments/uw6hh9/a_better_t480_power_saving_guide/
