@@ -1,4 +1,4 @@
-# Configuración de linux
+# Personalización generak de mi propio debian y thinkpad t480
 Configuracion inicial cuando instalo debian: upgrade del kernel backports, programas que uso regularmente, tema de  kde...
 
 ## Programas
@@ -42,26 +42,31 @@ edito .config/kitty/color.ini y le pego https://github.com/zaqueoae/mylinux/blob
 ### Actualizar Kernel de linux con backports en debian
 Primero se añaden los backports. Un ejemplo: 
 ```
-sudo apt-get -t bookworm-backport install linux-image-amd64 linux-headers-amd64 firmware-linux
-```
-Se corre ese comando pero cambiando **bookworm** por el nombre en clave de la versión de debian en la que me encuentre. En mi caso es la 12, y por tanto sería bookworm.
+sudo nano /etc/apt/sources.list
 
-Para saber el nombre de la versión debian en la que me encuentro: https://wiki.debian.org/es/DebianReleases
+#Y pego al final esto. Sistituyendo bookworm por la version de debian que esté usando. Se puede ver la versión aquí: https://wiki.debian.org/es/DebianReleases
+deb http://deb.debian.org/debian bookworm-backports main contrib non-free-firmware
+deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free-firmware
 
-Luego corro esto
-```
+#Luego corro esto
 sudo  apt update
 sudo  apt upgrade -y
-```
 
-A continuación escribo: sudo apt install linux-image-   y doy a la tecla tab para elegir el kernel que quiera usar. Lo instalo y reinicio el ordenador.
+#A continuación escribo:
+sudo apt install linux-image-
+#y doy a la tecla tab para elegir el kernel que quiera usar. Lo instalo y reinicio el ordenador.
 
-Por último corro esto:
-
-```
+#Por último corro esto para actualizar los drivers.
 sudo apt-get install firmware-linux
 sudo apt-get upgrade firmware-linux
 ```
 
+## Extensiones de chromium
+- Unhook
+- Ublock origin
+- Focused - Website Blocker
+
 ## Energía en un thikpad t480
-Fuente: https://www.reddit.com/r/LinuxOnThinkpad/comments/uw6hh9/a_better_t480_power_saving_guide/
+Puedo usar tlp o auto-cpufreq.
+
+Otras recomendaciones: https://www.reddit.com/r/LinuxOnThinkpad/comments/uw6hh9/a_better_t480_power_saving_guide/
