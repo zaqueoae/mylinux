@@ -67,6 +67,11 @@ sudo apt-get upgrade firmware-linux
 - Focused - Website Blocker
 
 ## Energía en un thikpad t480
-Puedo usar tlp o auto-cpufreq.
+Voy a usar tlp y Thermal. Aquí una discusión sobre Thermal vs auto-cpufreq: https://news.ycombinator.com/item?id=35025838
+
+Tutorial tlp: https://gist.github.com/Kaapiii/a5b1e8ce6d7afbf912f9117aade88543
+
+Para instalar Thermal: sudo apt-get -y install thermald
+
 
 Otras recomendaciones: https://www.reddit.com/r/LinuxOnThinkpad/comments/uw6hh9/a_better_t480_power_saving_guide/
