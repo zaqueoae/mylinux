@@ -12,6 +12,7 @@ sudo apt install flatpak
 sudo apt install plasma-discover-backend-flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub org.telegram.desktop
+flatpak install flathub com.xnview.XnConvert
 sudo apt install libreoffice
 sudo apt install obs-studio
 sudo apt install audacity
@@ -69,7 +70,16 @@ sudo apt-get upgrade firmware-linux
 ## Energía en un thikpad t480
 Voy a usar tlp y Thermal. Aquí una discusión sobre Thermal vs auto-cpufreq: https://news.ycombinator.com/item?id=35025838
 
-Tutorial tlp: https://gist.github.com/Kaapiii/a5b1e8ce6d7afbf912f9117aade88543
+## Extensiones Vscode
+- Ayu
+- Bash extension pack
+- code runer
+- error lens
+- php debug
+- github copilot
+- php intelepse
+- indent rainbow
+- 
 
 Para instalar Thermal: sudo apt-get -y install thermald
 
