@@ -73,13 +73,11 @@ Voy a usar tlp y Thermal. Aquí una discusión sobre Thermal vs auto-cpufreq: ht
 ## Extensiones Vscode
 - Ayu
 - Bash extension pack
-- code runer
 - error lens
 - php debug
 - github copilot
 - php intelepse
 - indent rainbow
-- 
 
 Para instalar Thermal: sudo apt-get -y install thermald
 
