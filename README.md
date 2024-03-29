@@ -65,7 +65,7 @@ sudo apt-get upgrade firmware-linux
 ## Extensiones de chromium
 - Unhook
 - Ublock origin
-- Focused - Website Blocker
+- https://github.com/dimimikadze/focused
 
 ## Energía en un thikpad t480
 Voy a usar tlp y Thermal. Aquí una discusión sobre Thermal vs auto-cpufreq: https://news.ycombinator.com/item?id=35025838
