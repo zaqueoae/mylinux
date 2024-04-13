@@ -1,5 +1,4 @@
-# Personalización generak de mi propio debian y thinkpad t480
-Configuracion inicial cuando instalo debian: upgrade del kernel backports, programas que uso regularmente, tema de  kde...
+# Personalización generak de mi propio linux
 
 ## Programas
 ```
@@ -10,7 +9,6 @@ sudo apt install kitty-terminfo
 sudo apt install flatpak
 sudo apt install plasma-discover-backend-flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-
 flatpak install flathub com.xnview.XnConvert
 flatpak install flathub org.libreoffice.LibreOffice
 flatpak install flathub com.obsproject.Studio
@@ -19,17 +17,31 @@ flatpak install flathub org.kde.kdenlive
 sudo apt install linphone
 flatpak install flathub org.keepassxc.KeePassXC
 ```
+## Dot files
+```
+git clone https://github.com/zaqueoae/mylinux.git && cp -r ~/mylinux/.conf/* ~/.conf/ && rm -rf ~/mylinux
+```
+
+### Tema kde
+```
+git clone --depth=1 https://github.com/catppuccin/kde catppuccin-kde && cd catppuccin-kde && ./install.sh <<EOF
+1
+13
+1
+y
+y
+EOF
+rm -rf ~/catppuccin-kde
+```
+
+iconos: la capitane
+estilo ventanas: brisa
+
+
 ## Extensiones chrome
 - ublock origin
 - unhook
 - https://github.com/DimiMikadze/focused
-
-### Tema kde
-```
-https://github.com/catppuccin/kde
-iconos: la capitane
-estilo ventanas: brisa
-```
 
 
 ### Configuro kitty
@@ -39,38 +51,6 @@ y pego esto al final
 # kitty ssh fix
 [[ "$TERM" == "xterm-kitty" ]] && alias ssh="TERM=xterm-256color ssh"
 ```
-edito .config/kitty/kitty.conf y le pego https://github.com/zaqueoae/mylinux/blob/main/kitty/kitty.conf
-edito .config/kitty/color.ini y le pego https://github.com/zaqueoae/mylinux/blob/main/kitty/color.ini
-
-### Actualizar Kernel de linux con backports en debian
-Primero se añaden los backports. Un ejemplo: 
-```
-sudo nano /etc/apt/sources.list
-
-#Y pego al final esto. Sistituyendo bookworm por la version de debian que esté usando. Se puede ver la versión aquí: https://wiki.debian.org/es/DebianReleases
-deb http://deb.debian.org/debian bookworm-backports main contrib non-free-firmware
-deb-src http://deb.debian.org/debian bookworm-backports main contrib non-free-firmware
-
-#Luego corro esto
-sudo  apt update
-sudo  apt upgrade -y
-
-#A continuación escribo:
-sudo apt install linux-image-
-#y doy a la tecla tab para elegir el kernel que quiera usar. Lo instalo y reinicio el ordenador.
-
-#Por último corro esto para actualizar los drivers.
-sudo apt-get install firmware-linux
-sudo apt-get upgrade firmware-linux
-```
-
-## Extensiones de chromium
-- Unhook
-- Ublock origin
-- https://github.com/dimimikadze/focused
-
-## Energía en un thikpad t480
-Voy a usar tlp y Thermal. Aquí una discusión sobre Thermal vs auto-cpufreq: https://news.ycombinator.com/item?id=35025838
 
 ## Extensiones Vscode
 - Ayu
