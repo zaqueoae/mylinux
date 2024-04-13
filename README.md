@@ -7,20 +7,22 @@ sudo  apt update
 sudo apt upgrade -y
 sudo apt install kitty
 sudo apt install kitty-terminfo
-sudo apt install chromium
 sudo apt install flatpak
 sudo apt install plasma-discover-backend-flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.telegram.desktop
-flatpak install flathub com.xnview.XnConvert
-sudo apt install libreoffice
-sudo apt install obs-studio
-sudo apt install audacity
-sudo apt install kdenlive
-sudo apt install linphone
-sudo apt install keepassxc
-```
 
+flatpak install flathub com.xnview.XnConvert
+flatpak install flathub org.libreoffice.LibreOffice
+flatpak install flathub com.obsproject.Studio
+flatpak install flathub org.audacityteam.Audacity
+flatpak install flathub org.kde.kdenlive
+sudo apt install linphone
+flatpak install flathub org.keepassxc.KeePassXC
+```
+## Extensiones chrome
+- ublock origin
+- unhook
+- https://github.com/DimiMikadze/focused
 
 ### Tema kde
 ```
