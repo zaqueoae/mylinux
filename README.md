@@ -16,6 +16,7 @@ flatpak install flathub org.audacityteam.Audacity
 flatpak install flathub org.kde.kdenlive
 sudo apt install linphone
 flatpak install flathub org.keepassxc.KeePassXC
+flatpak install flathub md.obsidian.Obsidian
 ```
 ## Dot files
 ```
