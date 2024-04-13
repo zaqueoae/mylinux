@@ -46,7 +46,9 @@ estilo ventanas: brisa
 
 
 ### Configuro kitty
+```
 nano ~/.bashrc
+```
 y pego esto al final
 ```
 # kitty ssh fix
