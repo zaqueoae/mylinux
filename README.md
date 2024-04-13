@@ -52,7 +52,7 @@ y pego esto al final
 [[ "$TERM" == "xterm-kitty" ]] && alias ssh="TERM=xterm-256color ssh"
 ```
 
-## Extensiones Vscode
+### Extensiones Vscode
 - Ayu
 - Bash extension pack
 - error lens
@@ -60,8 +60,3 @@ y pego esto al final
 - github copilot
 - php intelepse
 - indent rainbow
-
-Para instalar Thermal: sudo apt-get -y install thermald
-
-
-Otras recomendaciones: https://www.reddit.com/r/LinuxOnThinkpad/comments/uw6hh9/a_better_t480_power_saving_guide/
