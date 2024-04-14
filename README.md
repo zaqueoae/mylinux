@@ -1,4 +1,4 @@
-# Personalización generak de mi propio linux
+# Personalización de mi entorno de trabajo en Linux
 
 ## Programas
 ```
@@ -24,19 +24,7 @@ git clone https://github.com/zaqueoae/mylinux.git && cp -r ~/mylinux/.conf/* ~/.
 ```
 
 ### Tema kde
-```
-git clone --depth=1 https://github.com/catppuccin/kde catppuccin-kde && cd catppuccin-kde && ./install.sh <<EOF
-1
-13
-1
-y
-y
-EOF
-rm -rf ~/catppuccin-kde
-```
-
-iconos: la capitane
-estilo ventanas: brisa
+Graphite-dark
 
 
 ## Extensiones chrome
