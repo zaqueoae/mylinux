@@ -51,3 +51,10 @@ y pego esto al final
 - github copilot
 - php intelepse
 - indent rainbow
+
+### Configuración de vscode
+```
+mkdir -p ./config/ && git clone https://github.com/zaqueoae/mylinux.git && bash ~/mylinux/vscode_configuration.sh && rm -rf ~/mylinux
+```
+Esto hace:
+- Deshabilita workbench.editor.enablePreview
