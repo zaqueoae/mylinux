@@ -20,7 +20,7 @@ flatpak install flathub md.obsidian.Obsidian
 ```
 ## Dot files
 ```
-git clone https://github.com/zaqueoae/mylinux.git && cp -r ~/mylinux/.conf/* ~/.conf/ && rm -rf ~/mylinux
+mkdir -p ./config/ && git clone https://github.com/zaqueoae/mylinux.git && cp -r ~/mylinux/.config/* ~/.config/ && rm -rf ~/mylinux
 ```
 
 ### Tema kde
