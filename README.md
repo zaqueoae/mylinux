@@ -50,7 +50,7 @@ y pego esto al final
 ```
 
 ### Extensiones Vscode
-- Ayu
+- Monokai Charcoal high contrast
 - Bash extension pack
 - error lens
 - php debug
