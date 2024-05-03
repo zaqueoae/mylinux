@@ -64,3 +64,7 @@ mkdir -p ./config/ && git clone https://github.com/zaqueoae/mylinux.git && bash 
 ```
 Esto hace:
 - Deshabilita workbench.editor.enablePreview
+
+
+### Remapear teclado
+Utilizo esto: https://github.com/sezanzeb/input-remapper
