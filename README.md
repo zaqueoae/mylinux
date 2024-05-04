@@ -59,9 +59,17 @@ y pego esto al final
 - indent rainbow
 
 ### Configuración de vscode
+En debian
 ```
 mkdir -p ./config/ && git clone https://github.com/zaqueoae/mylinux.git && bash ~/mylinux/vscode_configuration.sh && rm -rf ~/mylinux
 ```
+En arch
+```
+mkdir -p ./config/ && git clone https://github.com/zaqueoae/mylinux.git && bash ~/mylinux/vscode_configuration_arch.sh && rm -rf ~/mylinux
+
+```
+
+
 Esto hace:
 - Deshabilita workbench.editor.enablePreview
 
