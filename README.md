@@ -1,6 +1,6 @@
 # Personalización de mi entorno de trabajo en Linux
 
-## Programas
+## Programas en debian
 ```
 sudo  apt update
 sudo apt upgrade -y
@@ -15,15 +15,31 @@ sudo apt install kitty-terminfo
 sudo apt install flatpak
 sudo apt install plasma-discover-backend-flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+sudo apt install linphone
+```
+
+## Programas en arch
+```
+sudo pacman -Syu
+sudo pacman -S libfido2
+sudo pacman -S kitty
+sudo pacman -S kitty-terminfo
+yay -S linphone-desktop
+sudo pacman -S flatpak
+```
+
+## Flatpak
+```
+flatpak install flathub org.keepassxc.KeePassXC
+flatpak install flathub md.obsidian.Obsidian
 flatpak install flathub com.xnview.XnConvert
 flatpak install flathub org.libreoffice.LibreOffice
 flatpak install flathub com.obsproject.Studio
 flatpak install flathub org.audacityteam.Audacity
 flatpak install flathub org.kde.kdenlive
-sudo apt install linphone
-flatpak install flathub org.keepassxc.KeePassXC
-flatpak install flathub md.obsidian.Obsidian
 ```
+
+
 ## Dot files
 ```
 mkdir -p ./config/ && git clone https://github.com/zaqueoae/mylinux.git && cp -r ~/mylinux/.config/* ~/.config/ && rm -rf ~/mylinux
