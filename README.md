@@ -54,10 +54,12 @@ Graphite-dark
 - unhook
 - https://github.com/DimiMikadze/focused
 
-### Configuración de bash
+
+### Configuración de bash (arch)
 ```
  git clone https://github.com/zaqueoae/mylinux.git && bash ~/mylinux/comandos_personalizadosarch.sh ~/.config/ && rm -rf ~/mylinux
 ```
+
 
 ### Configuro kitty (Ubuntu)
 ```
