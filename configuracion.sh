@@ -8,6 +8,10 @@ echo "
     alias ls='ls --color=auto'
     alias grep='grep --color=auto'
     PS1='[\u@\h \W]\$ '
+
+
+    
+    #Configuracion personalizada
     
     # kitty ssh fix
     [ \"\$TERM\" = \"xterm-kitty\" ] && alias ssh=\"kitty +kitten ssh\"
