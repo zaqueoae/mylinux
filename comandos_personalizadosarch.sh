@@ -26,13 +26,5 @@ echo "
     }
 " >> ~/.bashrc
 
-source ~/.bashrc
-
-
-
-
-
-
-
 # Recarga .bashrc
 source ~/.bashrc
