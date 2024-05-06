@@ -57,7 +57,7 @@ Graphite-dark
 
 ### Configuración de bash (arch)
 ```
- git clone https://github.com/zaqueoae/mylinux.git && bash ~/mylinux/comandos_personalizadosarch.sh ~/.config/ && rm -rf ~/mylinux
+wget https://github.com/zaqueoae/mylinux/blob/9f594e78883b4866210ce3c0518bb6a602328f4e/configuracion_arch.sh && bash ~/configuracion_arch.sh && rm -f ~/configuracion_arch.sh && source ~/.bashrc
 ```
 
 
