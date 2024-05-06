@@ -1,16 +1,9 @@
 #!/bin/bash
 
-> ~/.bashrc
+sed -i '/#Configuracion personalizada/,$d' ~/.bashrc
+
 #Permisos al servidor local
 echo "
-    [[ \$- != *i* ]] && return
-
-    alias ls='ls --color=auto'
-    alias grep='grep --color=auto'
-    PS1='[\u@\h \W]\$ '
-
-
-    
     #Configuracion personalizada
     
     # kitty ssh fix
@@ -29,6 +22,3 @@ echo "
       sudo chmod -R g+w /srv/http
     }
 " >> ~/.bashrc
-
-# Recarga .bashrc
-source ~/.bashrc
