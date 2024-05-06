@@ -57,7 +57,7 @@ Graphite-dark
 
 ### Configuración de bash (arch)
 ```
-wget https://github.com/zaqueoae/mylinux/blob/9f594e78883b4866210ce3c0518bb6a602328f4e/configuracion_arch.sh && bash ~/configuracion_arch.sh && rm -f ~/configuracion_arch.sh && source ~/.bashrc
+curl -o configuracion_arch.sh https://raw.githubusercontent.com/zaqueoae/mylinux/main/configuracion_arch.sh?v=1 && bash ~/configuracion_arch.sh && rm -f ~/configuracion_arch.sh && source ~/.bashrc
 ```
 
 
