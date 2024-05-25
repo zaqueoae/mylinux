@@ -20,12 +20,12 @@ sudo apt install linphone
 
 ## Programas en arch
 ```
-sudo pacman -Syu
-sudo pacman -S libfido2
-sudo pacman -S kitty
-sudo pacman -S kitty-terminfo
+yay
+yay -S libfido2
+yay -S kitty
+yay -S kitty-terminfo
 yay -S linphone-desktop
-sudo pacman -S flatpak
+yay -S flatpak
 ```
 
 ## Flatpak
