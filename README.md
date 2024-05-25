@@ -1,4 +1,9 @@
 # Personalización de mi entorno de trabajo en Linux
+## Configuración de git
+```
+git config --global user.email "miemail@gmail.com"
+git config --global user.name "minik"
+```
 
 ## Programas en debian
 ```
