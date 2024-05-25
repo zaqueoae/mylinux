@@ -29,8 +29,11 @@ yay
 yay -S libfido2
 yay -S kitty
 yay -S kitty-terminfo
-yay -S linphone-desktop
-yay -S flatpak
+yay -S linphone-desktop-appimage
+sudo pacman -Syu flatpak
+sudo pacman -Syu telegram-desktop
+sudo pacman -Syu obsidian
+yay -S visual-studio-code-bin
 ```
 
 ## Flatpak
