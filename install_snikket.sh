@@ -22,7 +22,6 @@ ufw allow 443/tcp
 ufw allow 5222/tcp
 ufw allow 5269/tcp
 ufw allow 5000/tcp
-ufw allow 3478:3479
 ufw allow 3478:3479/tcp
 ufw allow 3478:3479/udp
 ufw allow 5349:5350/udp
