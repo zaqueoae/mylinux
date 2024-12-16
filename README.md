@@ -79,6 +79,47 @@ y pego esto al final
 ```
 # kitty ssh fix
 [[ "$TERM" == "xterm-kitty" ]] && alias ssh="TERM=xterm-256color ssh"
+vpnup () {
+sudo wg-quick up wg0
+}
+
+vpndown (){
+sudo wg-quick down wg0
+}
+pw(){
+    USER=$(whoami)
+    BASE_DIR="/var/www"
+    APACHE_USER="www-data"
+
+    # Agregar al usuario actual al grupo www-data
+    sudo usermod -a -G $APACHE_USER $USER
+
+    # Cambiar el grupo propietario de los directorios y subdirectorios a www-data
+    sudo chgrp -R $APACHE_USER $BASE_DIR
+
+    # Asegurar permisos de lectura, escritura y ejecución para el grupo
+    sudo chmod -R g+rwX $BASE_DIR
+
+    # Asegurar que los nuevos archivos y directorios hereden el grupo www-data
+    sudo find $BASE_DIR -type d -exec chmod g+s {} \;
+
+    # Crear los directorios necesarios
+    sudo mkdir -p /var/www/html
+    sudo mkdir -p /var/repositorio
+    sudo mkdir -p /var/create_tpv
+
+    # Cambiar el propietario de los directorios creados al usuario actual y al grupo www-data
+    sudo chown -R "$USER:$APACHE_USER" /var/www/html
+    sudo chown -R "$USER:$APACHE_USER" /var/repositorio
+    sudo chown -R "$USER:$APACHE_USER" /var/create_tpv
+
+    # Reiniciar Apache para aplicar los cambios
+    sudo systemctl restart apache2
+}
+```
+Ahora
+```
+source .bashrc
 ```
 
 ### Extensiones Vscode
